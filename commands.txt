@@ -6,3 +6,21 @@ minikube start
 בדיקת סטטוס:
 minikube status
 
+git:
+git checkout -b Dockerfile
+
+git add .
+git commit -m "add dockerfile"
+git push origin main
+git checkout main
+git pull
+
+בניית image:
+docker build -t test_11:v1 .
+
+הרצת image:
+docker run -it --name my_container test_11:v1
+
+העלאה ודחיפה לdocker hub:
+docker build -t sdbr1234/week_11:v1 .
+docker push sdbr1234/week_11:v1
