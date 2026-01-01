@@ -1,0 +1,1 @@
+In YAML we define the pod, its version, its type, its name, which image it will run and other general settings.
