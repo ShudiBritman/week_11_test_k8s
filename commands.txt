@@ -26,3 +26,18 @@ docker build -t sdbr1234/week_11:v1 .
 docker push sdbr1234/week_11:v1
 docker rmi sdbr1234/week_11:v1 #מחקתי אותו מהdocker המקומי
 docker run -it sdbr1234/week_11:v1 #הרצתי אותו מחדש והוא משך אותו מהענן
+
+
+הרצת האפליקציה בMinikube:
+kubectl apply -f pod.yaml
+kubectl apply -f service.yaml
+
+סטטוס:
+kubectl get pod api
+kubectl get service api-service
+
+גישה לאפליקציה:
+minikube service api-service
+
+בדיקת לוגים:
+kubectl logs api
