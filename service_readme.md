@@ -1,0 +1,1 @@
+In service we define its version, its service type, its name, which server it runs on and which ports to reach the server.
